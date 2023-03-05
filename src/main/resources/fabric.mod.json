@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dungeon-dimensions",
+	"version": "${version}",
+	"name": "Dungeon Dimensions",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Teøstra!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/dungeon-dimensions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"teostra_dungegon_dimensions.Dungeon_Dimensions"
+		],
+		"client": [
+			"teostra_dungegon_dimensions.Dungeon_Dimension_Client"
+		],
+		"fabric-datagen": [
+          "teostra_dungegon_dimensions.Dungeon_Dimension_DataGenerator"
+		]
+	},
+	"mixins": [
+		"dungeon-dimensions.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
